@@ -1,0 +1,46 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.game{
+   border:1px solid black;
+   height: 500px;
+   width: 300px;
+   margin: auto;
+   position: relative;
+   top: 40px;
+   overflow: hidden;
+    background: linear-gradient(rgb(148, 148, 246),white);
+}
+.player{
+    background: rgb(30, 3, 89);
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: 400px; 
+    left: 100px;
+}
+.prob{
+    background: rgb(5, 5, 5);
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    left: 100px;
+    animation: movedown 2s linear infinite ;
+}
+@keyframes movedown {
+    0%{
+        top: -100px;
+    }
+    100%{
+        top: 100%;
+    }
+}
+#score{
+    font-weight: 800;
+    text-transform: uppercase;
+    padding-left: 120px;
+    padding-top: 20px;
+    color: rgb(252, 252, 251);
+}
